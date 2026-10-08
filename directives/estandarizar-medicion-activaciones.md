@@ -31,10 +31,11 @@ Mantener el sistema que mide todas las activaciones con el mismo formato: una pl
    - Los campos manuales son "¿Activación exitosa?" (Sí/No), Decisión y Resumen de comentarios cualitativos de la agencia (resumido con Copilot).
    - El periodo fiscal sale automático.
 5. **Pestaña 5 Flagships (solo control para los AM).**
-   - Una fila por cliente. Calcula sola la ciudad, el área, el nº de líneas y el coste de activaciones (suma de la columna L).
+   - Una fila por cliente. Calcula sola la ciudad, el área, el "Nº activaciones realizadas" y el "Coste total activaciones (€)" (suma de la columna L).
    - Se rellenan a mano Visibility, Otros costes con su concepto y Presupuesto.
    - Calcula la inversión total y el % consumido (ámbar desde el 90 %, rojo por encima del 100 %). Marca los clientes duplicados y admite hasta 50.
    - No alimenta el Tracker, que solo lleva costes y KPIs de las activaciones.
+   - En 4 M&E, si el tipo es Flagship, aparece el bloque "Inversión Flagship": A&P de las activaciones + visibility + otros costes = inversión total. Visibility y otros costes se suman solo ahí: no entran en el A&P gastado total, ni en los costes por drink, contacto o activación, ni en el Tracker.
 6. **Tracker.**
    - Pestañas: Resumen, Tracker, Datos, DatosArea, DatosTrim y Cómo se alimenta.
    - Se alimenta con Power Query desde una carpeta con los archivos. Cada archivo tiene que estar guardado al menos una vez en Excel de escritorio.
